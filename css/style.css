@@ -1,0 +1,47 @@
+/* Global Variables, Reset, Body */
+
+:root {
+    --max-width: 1280px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Header */
+
+.header {
+    padding: 2rem;
+
+    color: white;
+    background-color: #222;
+}
+
+.header__inner {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header__name {
+    font-size: 1.5rem;
+}
+
+.header__headline {
+    margin-top: 1em;
+    font-size: 3rem;
+}
+
+.header__paragraph {
+    max-width: 800px;
+    margin-top: 0.5em;
+
+    font-size: 1.1rem;
+    line-height: 150%;
+
+    color: rgba(255, 255, 255, 0.8);
+}
