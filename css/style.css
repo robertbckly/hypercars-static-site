@@ -38,14 +38,14 @@ body {
 
 .header__headline {
     margin-top: 1em;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 .header__paragraph {
     max-width: 800px;
     margin-top: 0.5em;
 
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 150%;
 
     color: rgba(255, 255, 255, 0.8);
@@ -56,10 +56,14 @@ body {
     margin-bottom: 3rem;
 }
 
+.header__details-heading {
+    font-size: 1.1rem;
+}
+
 .header__detail {
     margin-top: 0.5em;
 
-    font-size: 1.1em;
+    font-size: 1.05em;
 
     color: rgba(255, 255, 255, 0.8);
 }
@@ -120,8 +124,6 @@ body {
 .gallery__image {
     background-size: cover;
     background-position: center;
-
-    cursor: pointer;
 }
 
 .gallery__image--1 {
@@ -181,6 +183,47 @@ body {
 
 .footer__inner {
     max-width: var(--content-max-width);
-    padding: var(--content-padding);
+    padding: calc(var(--content-padding) * 2) var(--content-padding);
     margin: auto;
+
+    text-align: center;
+}
+
+.footer__cta {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.footer__social-link {
+    margin: 0.5rem;
+
+    text-decoration: none;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Media Queries */
+
+@media (max-width: 720px) {
+    .header__headline {
+        font-size: 2.75rem;
+    }
+
+    .header__paragraph {
+        font-size: 1.1rem;
+    }
+
+    .gallery__collection {
+        width: 100%;
+        margin-top: var(--margin);
+    }
+
+    .gallery__collection:first-of-type {
+        margin-top: 0;
+    }
+
+    .gallery__collection:last-of-type {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }
