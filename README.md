@@ -6,3 +6,7 @@ However, this example does show:
 - CSS custom properties
 - BEM CSS methology
 - Basic responsive design, using a media query break-point to provide rules for smaller viewports
+
+----
+
+[Live demo](https://robertbckly.github.io/hypercars-static-site/)
